@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Inconsolata");
+
+html, body {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Inconsolata", monospace;
+  line-height: 1.5;
+  color: #333;
+  background-color: rgb(240, 240, 240);
+}
+
+a {
+  color: rgb(130, 60, 60);
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  font-style: italic;
+}
+
+img {
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.titleCard {
+  width: 100%;
+}
+
+.name {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  margin: 0;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrolling-text 30s linear infinite;
+}
+
+@keyframes scrolling-text {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.list-and-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.process-image {
+  max-width: 40%;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.space {
+  margin: 12px 0;
+}
+
+.personal {
+  max-width: 65%;
+  margin-top: 2rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.personal li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.personal li::before {
+  position: absolute;
+  left: 0;
+}
+
+.personal li:nth-child(1)::before {
+  content: '🍞';
+}
+
+.personal li:nth-child(2)::before {
+  content: '🍺';
+}
+
+.personal li:nth-child(3)::before {
+  content: '🐟';
+}
+
+.personal li:nth-child(4)::before {
+  content: '🇸🇪';
+}
+
+.personal li:nth-child(5)::before {
+  content: '🐠';
+}
+
+.personal li:nth-child(6)::before {
+  content: '🇩🇰';
+}
+
+.personal li:nth-child(7)::before {
+  content: '🍻';
+}
